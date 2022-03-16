@@ -52,7 +52,9 @@
 2. Create an expo account
 3. Open the camera app on your device and scan the code below
 
-   ![qr image](./app/readme-assets/expo-qr.png)
+  ![Uploading Screenshot 2022-03-16 at 11.57.28 PM.png…]()
+
+  OR click [here](https://expo.dev/@geetee/elderberry)
 
 4. Login with username: RachelKhua, password: Nullpassword
 
