@@ -19,6 +19,15 @@
 - Try it out!
   - [📌 Report demo](#Report-Demo)<br>
 
+[Hardware](#elderberry-hardware)
+
+- [Setup](#hardware-setup)
+- [Camera Module](#camera-module)
+- [Module](#communication-module)
+- [Bluetooth Module](#mqtt-bluetooth-module)
+
+[Watch Info](#watch)
+
 <br>
 
 # Elderberry Caregiver Application
@@ -50,6 +59,8 @@
 
    Open this [link](exp://exp.host/@geetee/Elderberry?release-channel=default) on your device
 
+4. Login with username: RachelKhua, password: Nullpassword
+
 <br>
 
 ### Local Installation 💻
@@ -77,6 +88,7 @@
    $ expo start
    ```
 5. Scan QR code on http://localhost:19002
+6. Login with username: RachelKhua, password: Nullpassword
 
 <br>
 
@@ -110,47 +122,45 @@
 
   <br>
 
-
 # Elderberry-Backend
 
 Try it out!
+
 - [Report demo](#Report-Demo)<br>
 
 ## Intro
+
 Repository for Flask server running on Huawei Elastic Cloud Server (ECS). Provides backend routes for Elderberry project and runs Food Detection AI, Sentiment Analysis, Anomaly Detection and the generation of monthly reports.
 
 The monthly report system is hosted at http://119.13.104.214:80/customizeReport.
 
 ## Navigating this Repository
+
 The file `app.py` contains the list of all routes. It redirects each set of relavent routes (i.e. bluetooth routes) to the corresponding file in `/routes`, for instance `/routes/bluetooth.py`. That file processes the query and uses `/hctools/bluetooth.py` (hctools referring to Huawei Cloud tools) to invoke GaussDB, OBS or otherwise.
 
 The `/mockData` files help generate mock data for the back-end reports and the front-end app.
 
 ## Technical Stack
+
 ![This is an image](backend/readme/chart.png)
 
 ## Database Design
+
 ![This is an image](backend/readme/database.png)
 
 ## Report Demo
+
 To demonstrate different kind of reports that can be generated, we created a webpage to try generating the reports for different profiles. This shows the different type of reports that can be made based on the user. <br>
-Try it out [here](http://119.13.104.214)
+Try it out [here](http://elderberry.live)
 
-----
-# Watch
-This application is coded in Swift, and makes use of HealthKit to post relevant data. Unfortunately none of us own a Huawei Smart watch, and coding an MVP using 
-an Apple watch was our only option. However, we realised Apple was very restrictive in terms of posting data and data is only updated once every 10 minutes.
-While the application works, we are unable to get it to work in real time using the Apple watch. However, given time and resources, we are confident
-that we are able to do real time updates using Huawei healthkit, and may even expand to notifications, in-app fall detection, and blood O2 saturation, which are
-features that are unavailable to developers for the Apple watch.
-
-
-----
+---
 
 # Elderberry-Hardware
+
 This build is in a linux environment (Raspbian) for Raspberry Pi 2B (armv7l)
 
 ## Hardware Setup
+
 <figure>
 <img src="hardware/readme-assets/raspberry-pi.JPG" alt="Raspberry Pi 2B" style="width:100%">
 <figcaption align = "center">The Raspberry Pi 2B used is connected to a Webcam, Speaker, Buttons via GPIO, Ethernet and Power.</figcaption>
@@ -177,25 +187,31 @@ This build is in a linux environment (Raspbian) for Raspberry Pi 2B (armv7l)
 </figure>
 
 ## Camera Module
+
 Photos are taken by OpenCV when motion is detected, before being uploaded.
 
 ## Communication Module
+
 ### Announcements
+
 `announce.py` contains code for announcements and scheduled medicine reminders.
 
 Running a local Flask Server, we generate a tunnel using Ngrok which is POST to the Huawei Cloud Server. This allows the Cloud Server to POST new messages and recordings to the pi.
 
-For text announcements, we use gTTS to generate an audio of the announcement. 
+For text announcements, we use gTTS to generate an audio of the announcement.
 
 Then, both gTTS audio or recorded messages are played with vlc.
 
 #### Scheduled Medicine Reminders
+
 We make use of APScheduler and an Sqlite database to store information on medicine reminders, and schedule announcements to remind the Elderly to take their medicine.
 
 ### Recordings
+
 `record.py` contains code for the elderly to record messages back to the caregiver. Recordings are triggered by GPIO
 
 ## MQTT-Bluetooth Module
+
 This folder contains the code for the MQTT Bluetooth Client running on the Raspberry Pi.
 
 Using Paho MQTT, `client.py` subscribes to the local MQTT Mosquitto server running on the Pi.
@@ -203,4 +219,11 @@ Using Paho MQTT, `client.py` subscribes to the local MQTT Mosquitto server runni
 Comparing the reported RSSI Strengths of the Huawei Smartwatch with the ESP32 Bluetooth Beacons, our code derives the closest beacon, and POSTS it to the Huawei Cloud ECS Instance to update the current room the elderly is in.
 
 ### ESP32 Bluetooth Beacons
+
 These ESP32s are loaded with [ESPresense](https://github.com/ESPresense/ESPresense) v2.0.34, and communicate to the Pi via MQTT.
+
+---
+
+# Watch
+
+This application is coded in Swift, and makes use of HealthKit to post relevant data. Unfortunately none of us own a Huawei Smart watch, and coding an MVP using an Apple watch was our only option. However, we realised Apple was very restrictive in terms of posting data and data is only updated once every 10 minutes. While the application works, we are unable to get it to work in real time using the Apple watch. However, given time and resources, we are confident that we are able to do real time updates using Huawei healthkit, and may even expand to notifications, in-app fall detection, and blood O2 saturation, which are features that are unavailable to developers for the Apple watch.
