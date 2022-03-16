@@ -2,7 +2,7 @@
 
 [Caregiver App](#elderberry-caregiver-application)
 
-- [📌 Try our app](#try-our-app-🧑‍🔬)
+- [📌 Try our app](#try-our-app-)
   - [Try on expo (Recommended)](#try-it-on-expo-recommended) <br>
   - [Local install](#local-installation) <br>
 - [Project Info](#project-info)
@@ -31,7 +31,7 @@
 
 # Elderberry Caregiver Application
 
-- [Try our app](#try-our-app-🧑‍🔬)
+- [Try our app](#try-our-app-)
   - [Try on expo (Recommended)](#try-it-on-expo) <br>
   - [Local install](#local-installation-expo) <br>
 - [Project Info](#project-info)
