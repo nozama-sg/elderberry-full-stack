@@ -53,7 +53,7 @@
 2. Create an expo account
 3. Open the camera app on your device and scan the code below
 
-   ![qr image](./readme-assets/expo-qr.png)
+   ![qr image](./app/readme-assets/expo-qr.png)
 
    OR
 
