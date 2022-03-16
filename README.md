@@ -3,11 +3,10 @@
 [Caregiver App](#elderberry-caregiver-application)
 
 - [📌 Try our app](#try-our-app-🧑‍🔬)
-  - [Try on expo (Recommended)](#try-it-on-expo) <br>
-  - [Local install](#local-installation-expo) <br>
-- [Project Info](#project-info)
-  - [Tools](#languages--tools)
-  - [Directory structure](#project-structure)
+  - [Try on expo (Recommended)](#try-it-on-expo-recommended-👍) <br>
+  - [Local install](#local-installation-💻) <br>
+- [Project Info](#project-info-🙋)
+  - [Tools](#languages--tools-🔧)
 
 [Backend Server](#huawei-databases)
 
@@ -54,10 +53,6 @@
 3. Open the camera app on your device and scan the code below
 
    ![qr image](./app/readme-assets/expo-qr.png)
-
-   OR
-
-   Open this [link](exp://exp.host/@geetee/Elderberry?release-channel=default) on your device
 
 4. Login with username: RachelKhua, password: Nullpassword
 
