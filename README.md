@@ -52,7 +52,8 @@
 2. Create an expo account
 3. Open the camera app on your device and scan the code below
 
-  ![Uploading Screenshot 2022-03-16 at 11.57.28 PM.png…]()
+
+    ![Screenshot 2022-03-16 at 11 57 28 PM](https://user-images.githubusercontent.com/59089164/158633417-595216c6-3c4b-4dbb-9269-a2d928a63b68.png)  
 
   OR click [here](https://expo.dev/@geetee/elderberry)
 
