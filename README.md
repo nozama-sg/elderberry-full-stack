@@ -3,26 +3,26 @@
 [Caregiver App](#elderberry-caregiver-application)
 
 - [📌 Try our app](#try-our-app-🧑‍🔬)
-  - [Try on expo (Recommended)](#try-it-on-expo-recommended-👍) <br>
-  - [Local install](#local-installation-💻) <br>
-- [Project Info](#project-info-🙋)
-  - [Tools](#languages--tools-🔧)
+  - [Try on expo (Recommended)](#try-it-on-expo-recommended) <br>
+  - [Local install](#local-installation) <br>
+- [Project Info](#project-info)
+  - [Tools](#languages--tools)
 
-[Backend Server](#huawei-databases)
+[Backend Server](#elderberry-backend)
 
-- [Intro](#Intro) <br>
+- [Intro](#intro) <br>
 - Technical Details
-  - [Navigation](#Navigating-this-Repository) <br>
-  - [Tech Stack](#Technical-Stack) <br>
-  - [Db Design](#Database-Design) <br>
+  - [Navigation](#navigating-this-repository) <br>
+  - [Tech Stack](#technical-stack) <br>
+  - [Db Design](#database-design) <br>
 - Try it out!
-  - [📌 Report demo](#Report-Demo)<br>
+  - [📌 Report demo](#report-demo)<br>
 
 [Hardware](#elderberry-hardware)
 
 - [Setup](#hardware-setup)
 - [Camera Module](#camera-module)
-- [Module](#communication-module)
+- [Communication Module](#communication-module)
 - [Bluetooth Module](#mqtt-bluetooth-module)
 
 [Watch Info](#watch)
@@ -41,7 +41,7 @@
 
 ## Try our app 🧑‍🔬
 
-### Try it on expo (Recommended) 👍
+### Try it on expo (Recommended)
 
 1. Download the expo app
 
@@ -58,7 +58,7 @@
 
 <br>
 
-### Local Installation 💻
+### Local Installation
 
 1. Download the expo app
 
@@ -87,9 +87,9 @@
 
 <br>
 
-## Project Info 🙋
+## Project Info
 
-### Languages & tools 🔧
+### Languages & tools
 
 #### App building
 
