@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C12F82BB27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C12F82BA27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C12F82C027CF34F200E931B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F82BF27CF34F200E931B1 /* Assets.xcassets */; };
+		C12F82C727CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C12F82C627CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C12F82CC27CF34F200E931B1 /* Elderberry_senior_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82CB27CF34F200E931B1 /* Elderberry_senior_appApp.swift */; };
+		C12F82CE27CF34F200E931B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82CD27CF34F200E931B1 /* ContentView.swift */; };
+		C12F82D027CF34F200E931B1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82CF27CF34F200E931B1 /* NotificationController.swift */; };
+		C12F82D227CF34F200E931B1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82D127CF34F200E931B1 /* NotificationView.swift */; };
+		C12F82D427CF34F200E931B1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82D327CF34F200E931B1 /* ComplicationController.swift */; };
+		C12F82D627CF34F300E931B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F82D527CF34F300E931B1 /* Assets.xcassets */; };
+		C12F82D927CF34F300E931B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F82D827CF34F300E931B1 /* Preview Assets.xcassets */; };
+		C12F82EC27CF353100E931B1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12F82EB27CF353100E931B1 /* HealthKit.framework */; };
+		C12F82EE27CF355600E931B1 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F82ED27CF355600E931B1 /* HealthStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C12F82BC27CF34F100E931B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12F82B027CF34F100E931B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C12F82B927CF34F100E931B1;
+			remoteInfo = "Elderberry-senior-app WatchKit App";
+		};
+		C12F82C827CF34F200E931B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12F82B027CF34F100E931B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C12F82C527CF34F200E931B1;
+			remoteInfo = "Elderberry-senior-app WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C12F82E127CF34F300E931B1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C12F82C727CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12F82E527CF34F300E931B1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C12F82BB27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C12F82B627CF34F100E931B1 /* Elderberry-senior-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elderberry-senior-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12F82BA27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elderberry-senior-app WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12F82BF27CF34F200E931B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C12F82C127CF34F200E931B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12F82C627CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Elderberry-senior-app WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12F82CB27CF34F200E931B1 /* Elderberry_senior_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elderberry_senior_appApp.swift; sourceTree = "<group>"; };
+		C12F82CD27CF34F200E931B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C12F82CF27CF34F200E931B1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C12F82D127CF34F200E931B1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C12F82D327CF34F200E931B1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C12F82D527CF34F300E931B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C12F82D827CF34F300E931B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C12F82DA27CF34F300E931B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12F82DB27CF34F300E931B1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C12F82E927CF353100E931B1 /* Elderberry-senior-app WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Elderberry-senior-app WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C12F82EB27CF353100E931B1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		C12F82ED27CF355600E931B1 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C12F82C327CF34F200E931B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F82EC27CF353100E931B1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C12F82AF27CF34F100E931B1 = {
+			isa = PBXGroup;
+			children = (
+				C12F82BE27CF34F100E931B1 /* Elderberry-senior-app WatchKit App */,
+				C12F82CA27CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension */,
+				C12F82B727CF34F100E931B1 /* Products */,
+				C12F82EA27CF353100E931B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C12F82B727CF34F100E931B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12F82B627CF34F100E931B1 /* Elderberry-senior-app.app */,
+				C12F82BA27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app */,
+				C12F82C627CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C12F82BE27CF34F100E931B1 /* Elderberry-senior-app WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C12F82BF27CF34F200E931B1 /* Assets.xcassets */,
+				C12F82C127CF34F200E931B1 /* Info.plist */,
+			);
+			path = "Elderberry-senior-app WatchKit App";
+			sourceTree = "<group>";
+		};
+		C12F82CA27CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C12F82E927CF353100E931B1 /* Elderberry-senior-app WatchKit Extension.entitlements */,
+				C12F82CB27CF34F200E931B1 /* Elderberry_senior_appApp.swift */,
+				C12F82CD27CF34F200E931B1 /* ContentView.swift */,
+				C12F82ED27CF355600E931B1 /* HealthStore.swift */,
+				C12F82CF27CF34F200E931B1 /* NotificationController.swift */,
+				C12F82D127CF34F200E931B1 /* NotificationView.swift */,
+				C12F82D327CF34F200E931B1 /* ComplicationController.swift */,
+				C12F82D527CF34F300E931B1 /* Assets.xcassets */,
+				C12F82DA27CF34F300E931B1 /* Info.plist */,
+				C12F82DB27CF34F300E931B1 /* PushNotificationPayload.apns */,
+				C12F82D727CF34F300E931B1 /* Preview Content */,
+			);
+			path = "Elderberry-senior-app WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C12F82D727CF34F300E931B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C12F82D827CF34F300E931B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C12F82EA27CF353100E931B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C12F82EB27CF353100E931B1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C12F82B527CF34F100E931B1 /* Elderberry-senior-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12F82E627CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app" */;
+			buildPhases = (
+				C12F82B427CF34F100E931B1 /* Resources */,
+				C12F82E527CF34F300E931B1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C12F82BD27CF34F100E931B1 /* PBXTargetDependency */,
+			);
+			name = "Elderberry-senior-app";
+			productName = "Elderberry-senior-app";
+			productReference = C12F82B627CF34F100E931B1 /* Elderberry-senior-app.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C12F82B927CF34F100E931B1 /* Elderberry-senior-app WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12F82E227CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app WatchKit App" */;
+			buildPhases = (
+				C12F82B827CF34F100E931B1 /* Resources */,
+				C12F82E127CF34F300E931B1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C12F82C927CF34F200E931B1 /* PBXTargetDependency */,
+			);
+			name = "Elderberry-senior-app WatchKit App";
+			productName = "Elderberry-senior-app WatchKit App";
+			productReference = C12F82BA27CF34F100E931B1 /* Elderberry-senior-app WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C12F82C527CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12F82DE27CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app WatchKit Extension" */;
+			buildPhases = (
+				C12F82C227CF34F200E931B1 /* Sources */,
+				C12F82C327CF34F200E931B1 /* Frameworks */,
+				C12F82C427CF34F200E931B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Elderberry-senior-app WatchKit Extension";
+			productName = "Elderberry-senior-app WatchKit Extension";
+			productReference = C12F82C627CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C12F82B027CF34F100E931B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C12F82B527CF34F100E931B1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C12F82B927CF34F100E931B1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C12F82C527CF34F200E931B1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C12F82B327CF34F100E931B1 /* Build configuration list for PBXProject "Elderberry-senior-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C12F82AF27CF34F100E931B1;
+			productRefGroup = C12F82B727CF34F100E931B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C12F82B527CF34F100E931B1 /* Elderberry-senior-app */,
+				C12F82B927CF34F100E931B1 /* Elderberry-senior-app WatchKit App */,
+				C12F82C527CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C12F82B427CF34F100E931B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12F82B827CF34F100E931B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F82C027CF34F200E931B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12F82C427CF34F200E931B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F82D927CF34F300E931B1 /* Preview Assets.xcassets in Resources */,
+				C12F82D627CF34F300E931B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C12F82C227CF34F200E931B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F82D027CF34F200E931B1 /* NotificationController.swift in Sources */,
+				C12F82EE27CF355600E931B1 /* HealthStore.swift in Sources */,
+				C12F82CE27CF34F200E931B1 /* ContentView.swift in Sources */,
+				C12F82D427CF34F200E931B1 /* ComplicationController.swift in Sources */,
+				C12F82CC27CF34F200E931B1 /* Elderberry_senior_appApp.swift in Sources */,
+				C12F82D227CF34F200E931B1 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C12F82BD27CF34F100E931B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C12F82B927CF34F100E931B1 /* Elderberry-senior-app WatchKit App */;
+			targetProxy = C12F82BC27CF34F100E931B1 /* PBXContainerItemProxy */;
+		};
+		C12F82C927CF34F200E931B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C12F82C527CF34F200E931B1 /* Elderberry-senior-app WatchKit Extension */;
+			targetProxy = C12F82C827CF34F200E931B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C12F82DC27CF34F300E931B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C12F82DD27CF34F300E931B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C12F82DF27CF34F300E931B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Elderberry-senior-app WatchKit Extension/Elderberry-senior-app WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Elderberry-senior-app WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Elderberry-senior-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C12F82E027CF34F300E931B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Elderberry-senior-app WatchKit Extension/Elderberry-senior-app WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Elderberry-senior-app WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Elderberry-senior-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C12F82E327CF34F300E931B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				IBSC_MODULE = Elderberry_senior_app_WatchKit_Extension;
+				INFOPLIST_FILE = "Elderberry-senior-app WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C12F82E427CF34F300E931B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				IBSC_MODULE = Elderberry_senior_app_WatchKit_Extension;
+				INFOPLIST_FILE = "Elderberry-senior-app WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C12F82E727CF34F300E931B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C12F82E827CF34F300E931B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8ZGG8RLNC;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nozama.Elderberry-senior-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C12F82B327CF34F100E931B1 /* Build configuration list for PBXProject "Elderberry-senior-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12F82DC27CF34F300E931B1 /* Debug */,
+				C12F82DD27CF34F300E931B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12F82DE27CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12F82DF27CF34F300E931B1 /* Debug */,
+				C12F82E027CF34F300E931B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12F82E227CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12F82E327CF34F300E931B1 /* Debug */,
+				C12F82E427CF34F300E931B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12F82E627CF34F300E931B1 /* Build configuration list for PBXNativeTarget "Elderberry-senior-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12F82E727CF34F300E931B1 /* Debug */,
+				C12F82E827CF34F300E931B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C12F82B027CF34F100E931B1 /* Project object */;
+}
