@@ -131,9 +131,9 @@ Try it out!
 
 ## Intro
 
-Repository for Flask server running on Huawei Elastic Cloud Server (ECS). Provides backend routes for Elderberry project and runs Food Detection AI, Sentiment Analysis, Anomaly Detection and the generation of monthly reports.
+Repository for Flask server running on Huawei Elastic Cloud Server (ECS). The back-end code manages our large data flows from data analytics and Internet of things and warehouses it on Huawei GaussDB. It the generates reports using open-source tools like Food detection, Sentiment analysis and our own anomaly detection to provide a holistic dashboard that provides caregivers with comprehensive information about elderly health. 
 
-The monthly report system is hosted at http://119.13.104.214:80/customizeReport.
+The monthly report system is hosted at http://119.13.104.214:80/customizeReport.  
 
 ## Navigating this Repository
 
@@ -152,7 +152,8 @@ The `/mockData` files help generate mock data for the back-end reports and the f
 ## Report Demo
 
 To demonstrate different kind of reports that can be generated, we created a webpage to try generating the reports for different profiles. This shows the different type of reports that can be made based on the user. <br>
-Try it out [here](http://elderberry.live)
+Try it out [here](http://elderberry.live) 
+[NOTE: This has be depracated as the competition has ended] 
 
 ---
 
